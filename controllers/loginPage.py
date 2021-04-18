@@ -3,8 +3,13 @@ from controllers import groups
 
 def app():
 	st.title("LOGIN PAGE")
-	st.write("hi my name is leon")
-	if st.button('do not press'):
-		groups.app()
-	else:
-		st.write('good job')
+	name = st.text_input("Enter your username")
+
+	if(st.button('Submit')):
+	    result = name.title() + "is valid"
+	    st.success(result)
+
+	password = st.text_input("Enter your password")
+	if(st.button('Submit2')):
+		result = password.title() + "is valid"
+		st.success(result)

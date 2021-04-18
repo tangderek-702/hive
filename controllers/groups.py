@@ -3,29 +3,22 @@ import numpy as np
 import time
 
 def app():
-	progress_bar = st.progress(0)
-	status_text1 = st.empty()
-	status_text = st.empty()
-	chart = st.line_chart(np.random.randn(10, 2))
+	icon_button, group_name, notification_ind = st.beta_columns(3)
+	# You can use a column just like st.sidebar:
+	icon_button.button('Hive 1')
+	group_name.text("CalHacksHive!")
+	notification_ind.text("3 Notifications")
 
-	status_text1.text(
-		" ")
-	for i in range(100):
-	    # Update progress bar.
-	    progress_bar.progress(i + 1)
+	icon_button, group_name, notification_ind = st.beta_columns(3)
+	# You can use a column just like st.sidebar:
+	icon_button.button('Hive 3')
+	group_name.text("TheBesties!")
+	notification_ind.text("2 Notifications")
 
-	    new_rows = np.random.randn(10, 2)
-
-	    # Update status text.
-	    status_text.text(
-	        'The latest random number is: %s' % new_rows[-1, 1])
-
-	    # Append data to the chart.
-	    chart.add_rows(new_rows)
-
-	    # Pretend we're doing some computation that takes time.
-	    time.sleep(0.1)
-
-	status_text.text('Done!')
-	st.balloons()
+	icon_button, group_name, notification_ind = st.beta_columns(3)
+	# You can use a column just like st.sidebar:
+	icon_button.button('Hive 2')
+	group_name.text("ThisIsOurGroupName")
+	notification_ind.text("0 Notifications")
+	
 	
