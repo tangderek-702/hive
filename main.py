@@ -10,7 +10,7 @@ import streamlit as st
 def main():
 	PAGES = {
 		"loginPage": loginPage,
-		"signUpPage": signUpPage
+		"signUpPage": signUpPage,
 		"groups": groups
 	}
 

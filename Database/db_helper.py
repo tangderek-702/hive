@@ -7,7 +7,7 @@ class db:
 		"authDomain": "hive-f0de6.firebaseapp.com",
 		"databaseURL": "https://hive-f0de6.firebaseio.com",
 		"storageBucket": "hive-f0de6.appspot.com",
-		"serviceAccount": "C:\\Users\\14088\\Downloads\\hive-f0de6-firebase-adminsdk-5k61d-4cb9e04361.json"
+		"serviceAccount": "/Users/derektang/Downloads/hive-f0de6-firebase-adminsdk-5k61d-4cb9e04361.json"
 		}
 		self.firebase = pyrebase.initialize_app(config)
 		self.auth = self.firebase.auth()
